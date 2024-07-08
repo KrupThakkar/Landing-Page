@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    width: 100%;
+    height: 100%
+}
+/* body{
+    background: linear-gradient(to right, #f7f589, #ddb261);
+} */
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.top{
+    width: 100%;
+    height: 70%;
+    background-image: url(mount0.png);
+    background-size: cover;
+    background-position: 100% 50%;
+}
+.bottom{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    color: aliceblue;
+    border-radius: 40px;
+    /* background: linear-gradient(to right, #f7f589, #ddb261); */
+    
+}
+.first{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.216);
+    text-align: center;
+    font-size: 1.7rem;
+}
+.bottom i{
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+.first ,.second, .third ,.fourth,.fith p{
+    padding-top: 20px;
+    padding-left: 10px;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.second{
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.216);
+    text-align: center;
+    font-size: 1.7rem;
+}
+.third{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.216);
+    text-align: center;
+    font-size: 1.7rem;
+}
+.fourth{
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.216);
+    text-align: center;
+    font-size: 1.7rem;
+}
+.nav
+{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.388);
+    z-index: 1;
+}
+.nav-left{
+    color: white;
+    font-size: 1.8rem;
+}
+.nav-right ul{
+    font-size: 1.2rem;
+    display: flex;
+    gap: 30px;
+}
+.nav-right li, a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.196);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    padding: 0px 10vw;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.icons li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 2rem;
+    color: white;
+    list-style: none;
+}
+
+
+.text p{
+        position: absolute;
+        color: whitesmoke;
+        font-size: 1.1vw;
+        font-weight: 700;
+        top: 120px;
+    }
+
+.text h1{
+    color: whitesmoke;
+    font-size: 4vw;
+    font-weight: 700;
+}
+.last{
+    height: 100%;
+}
+.up{
+    width: 80%;
+    height: 10%;
+    margin-left: 10%;
+    margin-top: 15px;
+    font-size: 3rem;
+    color: #262626;
+    font-weight: 500;
+    text-align: center;
+}
+.mid{   
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+}
+.mid-top{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 1%
+}
+.mid-top-left{
+    position: relative;
+    background-color: blueviolet;
+    width: 47%;
+    height: 100%;
+    background-image: url(rajesthan.png);
+    background-size: cover;
+    color: azure;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+.overlay-first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay color and transparency */
+    opacity: 0;
+    transition: opacity 0.5s;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffdc3e;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.mid-top-left:hover .overlay-first {
+    opacity: 1;
+}
+.mid-top-right:hover .overlay-first {
+    opacity: 1;
+}
+.mid-bottom-left:hover .overlay-first{
+    opacity: 1;
+}
+.mid-bottom-mid:hover .overlay-first{
+    opacity: 1;
+}
+.mid-bottom-right:hover .overlay-first{
+    opacity: 1;
+}
+.mid-top-right{
+    position: relative;
+    background-color: black;
+    width: 57%;
+    height: 100%;
+    background-image: url(himachal.png);
+    background-size: cover;
+    background-position: 50% 60%;
+    color: azure;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+.last strong{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(0, 0, 0, 0.399);
+}
+h3{
+    text-align: center;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+
+}
+.mid-bottom{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    gap: 2%;
+    margin-top: 20px;
+}
+.mid-bottom-left{
+    position: relative;
+    height: 100%;
+    width: 31%;
+    background-image: url(kasol.png);
+    background-size: cover;
+    color: azure;
+    font-size: 2rem;
+    margin-left: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+.mid-bottom-mid{
+    position: relative;
+    height: 100%;
+    width: 31%;
+    background-image: url(assam.png);
+    background-size: cover;
+    color: azure;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+.mid-bottom-right{
+    position: relative;
+    height: 100%;
+    width: 31%;
+    background-image: url(golden.png);
+    background-size: cover;
+    color: azure;
+    font-size: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.315), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+}
+
+.bot{
+    text-align: center;
+    color: white;
+    background-color:#262626;
+    width: 100%;
+    height: 10%;
+    margin-top: 50px; 
+    opacity: 0.8; 
+    padding-top: 30px;
+}
